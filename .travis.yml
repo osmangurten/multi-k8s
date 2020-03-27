@@ -16,9 +16,9 @@ after_success:
     - docker build -t osmangurten/multi-worker ./worker
     # Log in to the Docker CLI
     - echo "$DOCKER_PASS" | docker login -u "$DOCKER_ID" --password-stdin
-    
+
     # Take those images and push them to docker hub
     - docker push osmangurten/multi-client
-    - docker push osmangurten/multi-nginx
+    - docker push osmangurten/multi-nginx:latest
     - docker push osmangurten/multi-server
     - docker push osmangurten/multi-worker
