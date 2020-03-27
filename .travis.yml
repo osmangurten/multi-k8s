@@ -17,7 +17,7 @@ after_success:
     # Log in to the Docker CLI
     - echo "$DOCKER_PASS" | docker login -u "$DOCKER_ID" --password-stdin
     # Take those images and push them to docker hub
-    - docker push osmangurten/multiD-client
-    - docker push osmangurten/multiD-nginx
-    - docker push osmangurten/multiD-server
-    - docker push osmangurten/multiD-worker
+    - docker push osmangurten/multi-client
+    - docker push osmangurten/multi-nginx
+    - docker push osmangurten/multi-server
+    - docker push osmangurten/multi-worker
