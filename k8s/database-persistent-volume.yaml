@@ -3,7 +3,7 @@ kind: PersistentVolume
 metadata:
   name: database-persistent-volume
 spec:
-  storageClassName: hostpath
+  # storageClassName: hostpath
   capacity:
     storage: 2Gi
   accessModes:
